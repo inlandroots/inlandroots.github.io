@@ -10,6 +10,8 @@
 }
 
 body {
+    position: absolute;
+
     margin: 0;
     padding-top: 10vh; /* for NAVBAR */
     scroll-behavior: smooth;
@@ -28,6 +30,9 @@ body {
     body { -ms-overflow-style: none; }
 /* ------- */
 
+div {
+    box-sizing: border-box;
+}
 
 /* --- NAVIGATION BAR --- */
 
@@ -66,6 +71,9 @@ body {
     }
     .navbar__button {
         cursor: pointer;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start !important;
     }
     .navbar__button a {
         font-size: 1.6rem;
@@ -105,19 +113,113 @@ body {
     align-items: flex-start;
 
     height: auto;
+    min-height: 100vh;
     min-width: 100vw;
 }
-#main div {
-    padding: 0 2vw;
+
+#background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 70vh;  width: 100%;
+    
+    background: url(../img/genova2-opt-768.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+
+
+#presentation {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+
+    height: auto; width: 60%; margin: 0 20%; padding: 0; 
+}
+
+#presentation text {
+    line-height: 100%;
+}
+
+#presentation__header {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+    height: 30vh;
+    width: 100%;
+    background: #ececeb8a; font-size: 2.2rem; 
+    text-shadow: 0 0 1px #ececeb;
+    font-size: 4vh;    
+    text-align: center; line-height: 100%; font-weight: 400;
+}
+
+#presentation__slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20vh; min-width: 100%; background: #e25822da; margin-bottom: 0;
+    text-shadow: 0 0 1px var(--dark);
+    color: var(--dominant);
+    font-size: 4vh;
+    padding:  0.5em;
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 0.8em;
     font-weight: normal;
     line-height: 100%;
     text-align: center;
-
-    border-bottom: solid 4px var(--secondary);
-    padding-bottom: 1rem;
+    font-style: italic;
+    width: 100%;
+    color: var(--dominant)
 }
-/* ------- */
+
+
+#description {
+    display: flex; flex-direction: column; align-items: flex-start;
+
+    height: auto; 
+    
+    background: gray;
+}
+
+#services {
+    display: flex; flex-direction: column; align-items: flex-start;
+
+    height: auto; width: 100%; 
+    
+    padding: 1rem 2rem;
+    background: var(--secondary); color: var(--dominant); 
+}
+
+#works {
+    display: flex; flex-direction: column; align-items: flex-start;
+
+    height: auto; width: 100%; 
+    
+    padding: 1rem 2rem;
+
+    background: var(--dominant--s1); color: var(--dominant); 
+}
+
+.btn-action {
+    align-self: flex-end; 
+
+    justify-content: space-around;
+    min-width: 50vw; background: var(--accent); border-radius: 2px; color: var(--dominant); box-shadow: 0 0 2px var(--dark); border: none; font-size: 1.8rem; 
+    text-shadow: 0 0 1px var(--dark);
+
+    padding: 0.2em 0em 0.2em 0.2em;  margin-bottom: 1rem;
+}
+
+.btn-action i {
+    margin-left: 0.2em;
+}

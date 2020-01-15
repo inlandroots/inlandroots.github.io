@@ -24,11 +24,29 @@ No media query for `xs` since this is the default in Bootstrap */
     .navbar__brand {
         margin-right: auto;
     }
+
+    .navbar__button {
+        width: auto;
+    }
+    
     #expand-collapse {
         display: none;
     }
-}
 
+
+    #background {
+        display: flex; justify-content: flex-end; align-items: flex-end;
+
+        background: url(../img/genova1-gray-opt.jpg);
+    }
+
+    #header {
+        width: 40vw;
+
+        font-size: 10vh;
+    }
+}
+  
 /* Large devices (desktops, 992px and up) */
 /* @media (min-width: 992px) { ... } */
 

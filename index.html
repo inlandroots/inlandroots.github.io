@@ -14,6 +14,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mediaqueries.css" rel="stylesheet">
 
+    <!-- <script type="text/javascript" src="utilities/fibonacci/fibonacci.js"></script> -->
+
     <script type="text/javascript" src="js/navbar.js"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
@@ -50,29 +52,38 @@
 
     <!-- **** MAIN **** -->
     <div id="main">
-        <div id="" class="" style="height: 10vh; background: none;">
 
-        </div>
-        <div id="" class="" style="height: 20vh; padding-right: 2rem; background: none; font-size: 2.2rem; display: flex; justify-content: flex-end;  border-right: solid 4px var(--accent);">
-            <span style="text-align: right; line-height: 100%; font-weight: 400;">
-                <text style="font-size:3rem; font-weight: bold;">G&B</text> <br> Progetti e <br> Costruzioni
-            </span>
-        </div>
-        <div id="" class="" style="height: 10vh; background: none;">
+        <div id="background" class="">
 
+            <div id="" style="height: 10vh; width: 100%;">
+
+            </div>
+
+            <div id="presentation">
+
+                <div id="presentation__header">
+                    <text style="font-size: 3em; font-weight: 700; border-bottom: solid 4px var(--accent);">G&B</text> 
+                    <text>Progetti e</text> 
+                    <text>Costruzioni</text>    
+                </div>
+                
+                <div id="presentation__slogan">
+                    <h1>La tua impresa edile di fiducia a Genova</h1>
+                </div>
+                
+            </div>   
+            
         </div>
-        <div id="" class="" style="height: 30vh; max-width: 60%; background: none; align-self: center; display: flex; justify-content: center; align-items: center;">
-            <h1>La tua impresa edile di fiducia a Genova</h1>
-        </div>
-        <div id="" class="" style="height: auto; background: none; display: flex; flex-direction: column; align-items: flex-start;">
+        
+        <div id="description" class="section">
             <span style="text-align: left; max-width: 80%; margin-top: 1rem; padding: 0 1rem; font-size: 1.2rem; font-weight: 500;">G&B Progetti e Costruzioni Srl è un’impresa edile situata a Genova.</span>
             
-            <span style="text-align: right; max-width: 100%; margin-top: 1rem; padding: 0 1rem; font-size: 1rem; font-weight: 300;"> 
+            <span style="text-align: left; max-width: 100%; margin-top: 1rem; padding: 0 1rem; font-size: 1rem; font-weight: 300;"> 
                 Ci occupiamo di costruzioni e ristrutturazioni totali o parziali di interni ed esterni, 
                 lavori in pietra ed in muratura, demolizioni, piastrellamenti, stucchi e vernici ad esigenza del cliente. 
             </span> 
 
-            <span style="text-align: left; max-width: 100%; margin: 1rem 0; padding: 1rem; font-size: 1rem; font-weight: 300;">
+            <span style="text-align: left; max-width: 100%; margin-bottom: 1rem; padding: 1rem; font-size: 1rem; font-weight: 300;">
                 Puoi contare su di noi per lavori di restauro, 
                 manutenzione e ripristino impianti idraulici, elettrici e radiotelevisivi, 
                 impianti di riscaldamento, condizionamento, carpenterie metalliche, scavi, 
@@ -81,28 +92,31 @@
                 e manutenzione immobili di qualsiasi natura, servizi di pulizia. 
             </span>
         </div>
-        <div id="" class="" style="height: auto; width: 100%; background: var(--secondary); color: var(--dominant); display: flex; flex-direction: column; align-items: flex-start;">
+
+        <div id="services" class="section">
             <span style="font-size: 2.2em; font-weight: bold; border-bottom: solid 4px var(--accent);">
                 Servizi
             </span>
-            <span style="padding: 1rem 0rem; font-weight: 200;">
+            <span class="action__description" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
                 Scopri la lista dettagliata dei nostri servizi e scrivici per un preventivo gratuito.
-            </span>
-            <button onclick="window.location.href = 'servizi.html';" style="width: 50%; align-self: flex-end; background: var(--accent); border-radius: 2px; color: var(--dominant); box-shadow: 0 0 2px var(--dark); border: none; font-size: 1.8rem; padding: 0em 1em; margin-bottom: 1rem;">
-                Scopri
+            </span>            
+            <button class="btn-action" onclick="window.location.href = 'servizi.html';">
+                Scopri <i class="fa fa-angle-right"></i>
             </button>
         </div>
-        <div id="" class="" style="height: auto; width: 100%; background: var(--dominant--s1); color: var(--dominant); display: flex; flex-direction: column; align-items: flex-start;">
+
+        <div id="works" class="section">
             <span style="font-size: 2.2em; font-weight: bold; border-bottom: solid 4px var(--secondary);">
                 I nostri lavori
             </span>
-            <span style="padding: 1rem 0rem; font-weight: 200;">
+            <span class="action__description" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
                 Guarda la gallery con le foto dei lavori che abbiamo fatto.
             </span>
-            <button class="disabled" style="width: 50%; align-self: flex-end; background: var(--accent); border-radius: 2px; color: var(--dominant); box-shadow: 0 0 2px var(--dark); border: none; font-size: 1.8rem; padding: 0em 1em; margin-bottom: 1rem;">
-                Guarda
+            <button class="btn-action disabled">
+                Guarda <i class="fa fa-angle-right"></i>
             </button>
         </div>
+
     </div>
     <!-- ******** -->
 

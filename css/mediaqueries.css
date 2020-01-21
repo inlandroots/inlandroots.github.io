@@ -19,6 +19,7 @@ No media query for `xs` since this is the default in Bootstrap */
         min-height: 10vh;
         min-width: 100vw;
         background: whitesmoke;
+        z-index: 10;
     }
 
     .navbar__brand {
@@ -33,17 +34,67 @@ No media query for `xs` since this is the default in Bootstrap */
         display: none;
     }
 
+    #main {
+        align-items: center;
 
-    #background {
-        display: flex; justify-content: flex-end; align-items: flex-end;
+        background: url(../img/genova2-opt.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
 
-        background: url(../img/genova1-gray-opt.jpg);
     }
 
     #header {
         width: 40vw;
 
         font-size: 10vh;
+    }
+
+    #actions {
+        flex-direction: row;
+    }
+    
+    #sezione-servizi {
+
+    }
+    #sezione-lavori {
+
+    }
+
+
+    #presentation {           
+        flex-direction: column;
+        justify-content: flex-end; 
+        align-items: flex-start;
+        background: none;
+    }
+
+    #presentation__header {
+        height: 50vh;
+        width: auto;
+        padding: 2em;
+        min-height: 50%;
+        min-width: 50%;
+        margin-bottom: 0;
+        background-color: var(--dominant);
+    }
+    #presentation__slogan {
+        width: 100%;
+
+        min-height: auto; min-width: 70%; 
+        height: auto; width: auto;
+        
+        padding: 1em;
+
+        background-color: var(--accent);
+    }
+
+
+    #azienda {
+        font-size: 20vh;
+        font-weight: 700; 
+        border-bottom: solid 4px var(--accent);
     }
 }
   

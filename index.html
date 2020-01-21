@@ -12,6 +12,8 @@
     <title>Edilizia e Ristrutturazioni Genova - G&B Progetti e Costruzioni SRL</title>
 
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+
     <link href="css/mediaqueries.css" rel="stylesheet">
 
     <!-- <script type="text/javascript" src="utilities/fibonacci/fibonacci.js"></script> -->
@@ -51,77 +53,72 @@
     <!-- ******** -->
 
     <!-- **** MAIN **** -->
+
     <div id="main">
-
-        <div id="background" class="">
-
-            <div id="" style="height: 10vh; width: 100%;">
-
+        <div id="" class="col--center" style="height: auto; width: 100%;">
+            <div id="" class="row" style="height: auto; width: 100%;">
+                <div class="section" id="presentation">
+                    <div id="presentation__header">
+                        <text id="azienda">G&B</text> 
+                        <text>Progetti e Costruzioni</text>    
+                    </div>
+                    
+                    <div id="presentation__slogan">
+                        <h1>La tua impresa edile di fiducia a Genova</h1>
+                    </div>
+                </div>
             </div>
 
-            <div id="presentation">
+            <div id="" class="row" style="height: auto; width: 100%;">
+                <section id="sezione-descrizione" class="section content--text">
+                    <span class="text" style="font-weight: 500; margin-top: 2em;">
+                        G&B Progetti e Costruzioni Srl è un’impresa edile situata a Genova.
+                    </span>
+                    <span class="text" style="font-weight: 300; margin-top: 2em;">
+                        Ci occupiamo di costruzioni e ristrutturazioni totali o parziali di interni ed esterni, 
+                        lavori in pietra ed in muratura, demolizioni, piastrellamenti, stucchi e vernici ad esigenza del cliente. 
+                    </span>
+                    <span class="text" style="font-weight: 300; margin-top: 1em; margin-bottom: 3em;">
+                        Puoi contare su di noi per lavori di restauro, 
+                        manutenzione e ripristino impianti idraulici, elettrici e radiotelevisivi, 
+                        impianti di riscaldamento, condizionamento, carpenterie metalliche, scavi, 
+                        attività edilizia, lavori di completamento, sterri 
+                        e lavori di terra con eventuali opere connesse, restauro 
+                        e manutenzione immobili di qualsiasi natura, servizi di pulizia.
+                    </span>
+                </section>
+            </div>
 
-                <div id="presentation__header">
-                    <text style="font-size: 3em; font-weight: 700; border-bottom: solid 4px var(--accent);">G&B</text> 
-                    <text>Progetti e</text> 
-                    <text>Costruzioni</text>    
-                </div>
-                
-                <div id="presentation__slogan">
-                    <h1>La tua impresa edile di fiducia a Genova</h1>
-                </div>
-                
-            </div>   
-            
-        </div>
-        
-        <div id="description" class="section">
-            <span style="text-align: left; max-width: 80%; margin-top: 1rem; padding: 0 1rem; font-size: 1.2rem; font-weight: 500;">G&B Progetti e Costruzioni Srl è un’impresa edile situata a Genova.</span>
-            
-            <span style="text-align: left; max-width: 100%; margin-top: 1rem; padding: 0 1rem; font-size: 1rem; font-weight: 300;"> 
-                Ci occupiamo di costruzioni e ristrutturazioni totali o parziali di interni ed esterni, 
-                lavori in pietra ed in muratura, demolizioni, piastrellamenti, stucchi e vernici ad esigenza del cliente. 
-            </span> 
-
-            <span style="text-align: left; max-width: 100%; margin-bottom: 1rem; padding: 1rem; font-size: 1rem; font-weight: 300;">
-                Puoi contare su di noi per lavori di restauro, 
-                manutenzione e ripristino impianti idraulici, elettrici e radiotelevisivi, 
-                impianti di riscaldamento, condizionamento, carpenterie metalliche, scavi, 
-                attività edilizia, lavori di completamento, sterri 
-                e lavori di terra con eventuali opere connesse, restauro 
-                e manutenzione immobili di qualsiasi natura, servizi di pulizia. 
-            </span>
-        </div>
-
-        <div id="services" class="section">
-            <span style="font-size: 2.2em; font-weight: bold; border-bottom: solid 4px var(--accent);">
-                Servizi
-            </span>
-            <span class="action__description" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
-                Scopri la lista dettagliata dei nostri servizi e scrivici per un preventivo gratuito.
-            </span>            
-            <button class="btn-action" onclick="window.location.href = 'servizi.html';">
-                Scopri <i class="fa fa-angle-right"></i>
-            </button>
-        </div>
-
-        <div id="works" class="section">
-            <span style="font-size: 2.2em; font-weight: bold; border-bottom: solid 4px var(--secondary);">
-                I nostri lavori
-            </span>
-            <span class="action__description" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
-                Guarda la gallery con le foto dei lavori che abbiamo fatto.
-            </span>
-            <button class="btn-action disabled">
-                Guarda <i class="fa fa-angle-right"></i>
-            </button>
-        </div>
-
+            <div id="" class="row" style="height: auto; width: 100%;">
+                <section id="sezione-servizi" class="section--half content--text">
+                    <span class="text--xl" style="font-weight: bold; border-bottom: solid 4px var(--accent);">
+                        Servizi
+                    </span>
+                    <span class="text" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
+                        Scopri la lista dettagliata dei nostri servizi e scrivici per un preventivo gratuito.
+                    </span>            
+                    <button class="btn-action text--l" onclick="window.location.href = 'servizi.html';">
+                        Scopri <i class="fa fa-angle-right"></i>
+                    </button>
+                </section>
+                <section id="sezione-lavori" class="section--half content--text">
+                    <span class="text--xl" style="font-weight: bold; border-bottom: solid 4px var(--secondary);">
+                        I nostri lavori
+                    </span>
+                    <span class="text" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
+                        Guarda la gallery con le foto dei lavori che abbiamo fatto.
+                    </span>
+                    <button class="btn-action text--l disabled">
+                        Guarda <i class="fa fa-angle-right"></i>
+                    </button>
+                </section>
+            </div>
+        </div> 
     </div>
     <!-- ******** -->
 
     <!-- **** FOOTER **** -->
-    <div id="footer" class="" style="height: auto; padding: 1rem; background: var(--dark); color: var(--dominant); display: flex; justify-content: space-around; align-items: center;">
+    <footer id="footer" class="" style="height: auto; padding: 1rem; background: var(--dark); color: var(--dominant); display: flex; justify-content: space-around; align-items: center;">
         <span style="font-size: 0.6rem; max-width: 50%;">
             Contattaci per un preventivo gratuito, creiamo progetti su misura a seconda di ogni necessità. 
         </span>
@@ -130,7 +127,7 @@
             <text>+39 000 000 00 00</text> 
             <text>Via aaaaa, 00 (Genova)</text> 
         </span>
-    </div>
+    </footer>
     <!-- ******** -->
 
 </body>

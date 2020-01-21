@@ -1,13 +1,20 @@
 :root {
     --dominant: #ececeb;
     --dominant--s1: #2B2B2B;
-    --dominant--s2: #aaaaaa;
+    --dominant--s2: #d6d6d6;
+
+    
+    --brick: #bd8e80;
 
     --accent: #e25822;
     --secondary: #10316b;
+    --shade1: #667BA0;
+    --shade2: #666A61;
     --text: #000000;
     --dark: #000000;
 }
+
+/* °°°°°°°°°°°°°°°°°°° */
 
 body {
     position: absolute;
@@ -15,7 +22,7 @@ body {
     margin: 0;
     padding-top: 10vh; /* for NAVBAR */
     scroll-behavior: smooth;
-    background: var(--dominant);
+    background: var(--shade2);
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
@@ -118,33 +125,48 @@ div {
 }
 
 #background {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
     height: 70vh;  width: 100%;
     
-    background: url(../img/genova2-opt-768.jpg);
+    /* background: url(../img/genova2-opt-768.jpg); */
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
 }
 
+#description {
+    height: auto; 
+    background: var(--dominant--s2);
+}
 
+#actions {
+    height: auto; 
+    width: 100%;
+}
 
 
 #presentation {
-    display: flex; 
     flex-direction: column;
     justify-content: flex-end; 
     align-items: center;
 
-    height: auto; width: 60%; margin: 0 20%; padding: 0; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    background: url(../img/genova2-opt-768.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    min-height: 80vh;
+    height: auto; 
+    padding: 0; 
 }
 
 #presentation text {
     line-height: 100%;
+
+    user-select: none;
 }
 
 #presentation__header {
@@ -154,8 +176,9 @@ div {
     align-items: center;
 
     height: 30vh;
-    width: 100%;
-    background: #ececeb8a; font-size: 2.2rem; 
+    width: 60%;
+    background: var(--dominant); 
+    margin-bottom: 20vh;
     text-shadow: 0 0 1px #ececeb;
     font-size: 4vh;    
     text-align: center; line-height: 100%; font-weight: 400;
@@ -165,7 +188,12 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 20vh; min-width: 100%; background: #e25822da; margin-bottom: 0;
+    min-height: 20vh; min-width: 100%; 
+    
+    
+    background-color: var(--accent);
+    
+    margin-bottom: 0;
     text-shadow: 0 0 1px var(--dark);
     color: var(--dominant);
     font-size: 4vh;
@@ -177,44 +205,35 @@ h1 {
     font-weight: normal;
     line-height: 100%;
     text-align: center;
-    font-style: italic;
+    /* font-style: italic; */
     width: 100%;
     color: var(--dominant)
 }
 
-
-#description {
-    display: flex; flex-direction: column; align-items: flex-start;
-
-    height: auto; 
-    
-    background: gray;
-}
-
-#services {
+#sezione-servizi {
     display: flex; flex-direction: column; align-items: flex-start;
 
     height: auto; width: 100%; 
-    
+    max-height: 512px;
     padding: 1rem 2rem;
-    background: var(--secondary); color: var(--dominant); 
+    background: var(--shade1); color: var(--dominant); 
 }
 
-#works {
+#sezione-lavori {
     display: flex; flex-direction: column; align-items: flex-start;
 
     height: auto; width: 100%; 
-    
+    max-height: 512px;
     padding: 1rem 2rem;
 
-    background: var(--dominant--s1); color: var(--dominant); 
+    background: var(--shade2); color: var(--dominant); 
 }
 
 .btn-action {
     align-self: flex-end; 
 
     justify-content: space-around;
-    min-width: 50vw; background: var(--accent); border-radius: 2px; color: var(--dominant); box-shadow: 0 0 2px var(--dark); border: none; font-size: 1.8rem; 
+    min-width: 50%; background: var(--accent); border-radius: 2px; color: var(--dominant); box-shadow: 0 0 2px var(--dark); border: none; font-size: 1.8rem; 
     text-shadow: 0 0 1px var(--dark);
 
     padding: 0.2em 0em 0.2em 0.2em;  margin-bottom: 1rem;
@@ -222,4 +241,14 @@ h1 {
 
 .btn-action i {
     margin-left: 0.2em;
+}
+
+#azienda {
+    font-size: 10vh;
+    font-weight: 700; 
+    border-bottom: solid 4px var(--accent);
+}
+
+#sezione-descrizione {
+    background: var(--dominant);
 }

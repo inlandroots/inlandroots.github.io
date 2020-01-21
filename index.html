@@ -27,7 +27,7 @@
 <body>
 
     <!-- **** NAVBAR **** -->
-    <div id="navbar" class="navbar navbar--collapsed">
+    <div id="navbar" class="navbar navbar--collapsed no-select">
         
         <div class="navbar__brand">
             <text>G&B</text>
@@ -38,13 +38,13 @@
         </div>
 
         <div id="home" class="navbar__button">
-            <a>Home</a>
+            <a class="text--nav">Home</a>
         </div>
         <div onclick="window.location.href = 'servizi.html';" id="servizi" class="navbar__button">
-            <a>Servizi</a>
+            <a class="text--nav">Servizi</a class="text--l">
         </div>
         <div id="lavori" class="navbar__button disabled">
-            <a>I nostri lavori</a>
+            <a class="text--nav">I nostri lavori</a>
         </div>
         <!-- <div id="contatti" class="navbar__button">
             <a>Contattaci</a>
@@ -57,14 +57,14 @@
     <div id="main">
         <div id="" class="col--center" style="height: auto; width: 100%;">
             <div id="" class="row" style="height: auto; width: 100%;">
-                <div class="section" id="presentation">
+                <div class="section no-select" id="presentation">
                     <div id="presentation__header">
-                        <text id="azienda">G&B</text> 
-                        <text>Progetti e Costruzioni</text>    
+                        <text id="azienda" class="text--title">G&B</text> 
+                        <text class="text--subtitle">Progetti e Costruzioni</text>    
                     </div>
                     
                     <div id="presentation__slogan">
-                        <h1>La tua impresa edile di fiducia a Genova</h1>
+                        <h1 class="text--slogan">La tua impresa edile di fiducia a Genova</h1>
                     </div>
                 </div>
             </div>
@@ -91,24 +91,24 @@
 
             <div id="" class="row" style="height: auto; width: 100%;">
                 <section id="sezione-servizi" class="section--half content--text">
-                    <span class="text--xl" style="font-weight: bold; border-bottom: solid 4px var(--accent);">
+                    <span class="text--xl no-select" style="font-weight: bold; border-bottom: solid 4px var(--accent);">
                         Servizi
                     </span>
                     <span class="text" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
                         Scopri la lista dettagliata dei nostri servizi e scrivici per un preventivo gratuito.
                     </span>            
-                    <button class="btn-action text--l" onclick="window.location.href = 'servizi.html';">
+                    <button class="btn-action no-select text--l" onclick="window.location.href = 'servizi.html';">
                         Scopri <i class="fa fa-angle-right"></i>
                     </button>
                 </section>
                 <section id="sezione-lavori" class="section--half content--text">
-                    <span class="text--xl" style="font-weight: bold; border-bottom: solid 4px var(--secondary);">
+                    <span class="text--xl no-select" style="font-weight: bold; border-bottom: solid 4px var(--secondary);">
                         I nostri lavori
                     </span>
                     <span class="text" style="padding: 1rem 0rem 2rem 0; font-weight: 200;">
                         Guarda la gallery con le foto dei lavori che abbiamo fatto.
                     </span>
-                    <button class="btn-action text--l disabled">
+                    <button class="btn-action no-select text--l disabled">
                         Guarda <i class="fa fa-angle-right"></i>
                     </button>
                 </section>
@@ -123,9 +123,11 @@
             Contattaci per un preventivo gratuito, creiamo progetti su misura a seconda di ogni necessità. 
         </span>
         <span style="font-size: 0.6rem; max-width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-            <text>gbcostruzioni@email.com</text> 
-            <text>+39 000 000 00 00</text> 
-            <text>Via aaaaa, 00 (Genova)</text> 
+            <text>gbprogetticostruzionisrl@gmail.com</text> 
+            <text>gbprogetticostruzionisrl@pec.it</text>
+            <text>+39 320 63 45 722 / +39 346 49 03 719</text> 
+            <text>Piazza Leonardo Da Vinci 5/3</text>
+            <text>16149 Genova</text>
         </span>
     </footer>
     <!-- ******** -->

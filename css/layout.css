@@ -4,11 +4,23 @@
 html {
     font-size: 18px;
     color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
 }
 
 div, section {
     display: flex;
     box-sizing: border-box;
+}
+
+.no-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .row {
@@ -34,6 +46,7 @@ div, section {
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
+    justify-content: space-evenly;
 }
 
 .content--text {
@@ -50,7 +63,7 @@ div, section {
     line-height: 100%;
 }
 .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 150%;
 }
 .text--l {
@@ -62,8 +75,75 @@ div, section {
     line-height: 100%;
 }
 
+.text--nav {
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+.text--title {
+    font-size: 7rem;
+    line-height: 120%;
+}
+.text--subtitle {
+    font-size: 1.6rem;
+    line-height: 160%;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+.text--slogan {
+    font-size: 1.6rem;
+    line-height: 100%;
+    font-weight: 700;
+    text-shadow: 0 0 2px black;
+    /* padding: 1rem 2rem; */
+}
+
+
 /* Medium devices (tablets, 768px and up) */
-/* @media all and (min-width: 768px) { ... } */
+@media all and (min-width: 768px) {
+    .text--xs {
+        font-size: 0.4rem;
+        line-height: 100%;
+    }
+    .text--s {
+        font-size: 0.6rem;
+        line-height: 100%;
+    }
+    .text {
+        font-size: 1rem;
+        line-height: 150%;
+    }
+    .text--l {
+        font-size: 1.6rem;
+        line-height: 150%;
+    }
+    .text--xl {
+        font-size: 2.6rem;
+        line-height: 100%;
+    }
+
+    .text--nav {
+        font-size: 1.2rem;
+        line-height: 100%;
+    }
+    .text--title {
+        font-size: 8rem;
+        line-height: 120%;
+        padding-bottom: 0.1em;
+    }
+    .text--subtitle {
+        font-size: 1.6rem;
+        line-height: 160%;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
+    .text--slogan {
+        font-size: 1.6rem;
+        line-height: 100%;
+        font-weight: 700;
+        text-shadow: 0 0 2px black;
+        /* padding: 1rem 2rem; */
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 /* @media (min-width: 992px) { ... } */

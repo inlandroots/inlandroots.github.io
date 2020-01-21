@@ -82,17 +82,16 @@ No media query for `xs` since this is the default in Bootstrap */
     #presentation__slogan {
         width: 100%;
 
-        min-height: auto; min-width: 70%; 
+        min-height: auto; 
+        /* min-width: 70%;  */
         height: auto; width: auto;
         
         padding: 1em;
-
-        background-color: var(--accent);
     }
 
 
     #azienda {
-        font-size: 20vh;
+        /* font-size: 20vh; */
         font-weight: 700; 
         border-bottom: solid 4px var(--accent);
     }

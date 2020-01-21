@@ -6,10 +6,12 @@
     
     --brick: #bd8e80;
 
-    --accent: #e25822;
+    --accent: #ff5722;
+    --accent-dark: #c41c00;
+
     --secondary: #10316b;
-    --shade1: #667BA0;
-    --shade2: #666A61;
+    --shade1: #002984;
+    --shade2: #1b1b1b;
     --text: #000000;
     --dark: #000000;
 }
@@ -83,19 +85,22 @@ div {
         justify-content: flex-start !important;
     }
     .navbar__button a {
-        font-size: 1.6rem;
+        /* font-size: 1.6rem; */
         text-decoration: none;
         color: var(--text);
         opacity: 0.8;
         padding-left: 1em;
     }
+    .navbar__button.current {
+        cursor: default;
+    }
     .navbar__button.current a {
         font-weight: 700 !important;
-        border-left: solid 2px var(--secondary);
+        border-left: solid 4px var(--shade1);
     }
     .navbar__button.disabled a {
         color: var(--text);
-        cursor: pointer;
+        cursor: default;
         opacity: 0.2;
     }
 
@@ -149,10 +154,6 @@ div {
     justify-content: flex-end; 
     align-items: center;
 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-
     background: url(../img/genova2-opt-768.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -163,20 +164,13 @@ div {
     padding: 0; 
 }
 
-#presentation text {
-    line-height: 100%;
-
-    user-select: none;
-}
-
 #presentation__header {
     display: flex; 
     flex-direction: column;
     justify-content: center; 
     align-items: center;
 
-    height: 30vh;
-    width: 60%;
+    width: 70%;
     background: var(--dominant); 
     margin-bottom: 20vh;
     text-shadow: 0 0 1px #ececeb;
@@ -189,7 +183,6 @@ div {
     flex-direction: column;
     justify-content: center;
     min-height: 20vh; min-width: 100%; 
-    
     
     background-color: var(--accent);
     
@@ -234,7 +227,7 @@ h1 {
 
     justify-content: space-around;
     min-width: 50%; background: var(--accent); border-radius: 2px; color: var(--dominant); box-shadow: 0 0 2px var(--dark); border: none; font-size: 1.8rem; 
-    text-shadow: 0 0 1px var(--dark);
+    text-shadow: 0 0 2px black;
 
     padding: 0.2em 0em 0.2em 0.2em;  margin-bottom: 1rem;
 }
@@ -244,11 +237,48 @@ h1 {
 }
 
 #azienda {
-    font-size: 10vh;
+    /* font-size: 10vh; */
     font-weight: 700; 
     border-bottom: solid 4px var(--accent);
 }
 
 #sezione-descrizione {
     background: var(--dominant);
+}
+#sezione-elenco-servizi {
+    background: var(--dominant);
+}
+
+#elenco-servizi li {
+    padding: 1em 0.5em;
+}
+
+
+/* --------------- behaviours */
+
+.navbar__button.current a:hover {
+    color: var(--text);
+    border-left: solid 4px var(--shade1);
+}
+.navbar__button.disabled a:active {
+
+}
+
+.navbar__button a:hover {
+    color: var(--accent-dark);
+    font-weight: 700;
+    border-left: solid 4px var(--accent);
+}
+.navbar__button:active {
+    opacity: 0.4;
+}
+
+.btn-action:hover {
+    box-shadow: 0 0 10px 0 inset var(--accent-dark);
+}
+.btn-action:focus {
+    box-shadow: 0 0 10px 0 inset var(--accent-dark);
+}
+.btn-action:active {
+    background-color: var(--accent-dark);
 }

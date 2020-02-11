@@ -69,6 +69,19 @@
     color: var(--secondary-light);
 }
 
+#sezione-elenco-servizi a {
+    color: var(--secondary-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+#sezione-elenco-servizi a:hover {
+    color: var(--secondary);
+}
+#sezione-elenco-servizi a:active {
+    color: var(--secondary-light);
+}
+
+
 #logo {
     background: url(../svg/logo.svg);
     background-repeat: no-repeat;

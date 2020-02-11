@@ -13,19 +13,19 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 
     <link href="css/mediaqueries.css" rel="stylesheet">
     
     <script type="text/javascript" src="js/navbar.js"></script>
-
     <script type="text/javascript" src="js/servizi.js"></script>
+
 </head>
 
 <body>
 
     <!-- **** NAVBAR **** -->
-    <div id="navbar" class="navbar navbar--collapsed no-select">
-        
+    <div id="navbar" class="navbar navbar--collapsed no-select bg-primary">                
         <div class="navbar__brand">
             <text>G&B</text>
         </div>
@@ -40,18 +40,15 @@
         <div onclick="window.location.href = 'servizi.html';" id="servizi" class="navbar__button">
             <a class="text--nav">Servizi</a class="text--l">
         </div>
-        <div id="lavori" class="navbar__button disabled">
+        <div id="lavori" class="navbar__button" onclick="window.location.href = 'lavori.html';">
             <a class="text--nav">I nostri lavori</a>
         </div>
-        <!-- <div id="contatti" class="navbar__button">
-            <a>Contattaci</a>
-        </div> -->
     </div>
     <!-- ******** -->
 
     <!-- **** MAIN **** -->
 
-    <div id="main">
+    <div id="main bg-background">
         <div id="" class="col--center" style="height: auto; width: 100%;">
             <div id="" class="row" style="height: auto; width: 100%;">
                 <section id="sezione-elenco-servizi" class="section content--text">
@@ -78,8 +75,10 @@
                         <li>Impermeabilizzazioni e isolamenti termici e cappotti </li>
                     </ul>
 
-                    <span class="text--l" style="font-weight: 500; text-align: center; padding: 0 1em;">
-                        <text style="border-bottom: solid 4px var(--accent); padding-bottom: 0.2em;">Contattaci per un preventivo gratuito!</text>
+                    <span class="text--l" style="font-weight: 500; text-align: center; padding: 0 4em;">
+                        <div style="border-bottom: solid 4px var(--secondary-dark); width: 100%;">
+                            <text style="padding-bottom: 0.2em;">Contattaci per un preventivo gratuito!</text>
+                        </div>
                     </span>
                     <span class="text--xl" style="font-weight: 500; text-align: center; margin-top: 1em; color: var(--shade1);">
                         <i class="fa fas fa-at"></i>
@@ -101,7 +100,7 @@
     <!-- ******** -->
 
     <!-- **** FOOTER **** -->
-    <footer id="footer" class="" style="height: auto; padding: 1rem; background: var(--dark); color: var(--dominant); display: flex; justify-content: space-around; align-items: center;">
+    <footer id="footer" class="" style="height: auto; padding: 1rem; background: var(--dark); color: var(--primary); display: flex; justify-content: space-around; align-items: center;">
         <span style="font-size: 0.6rem; max-width: 50%;">
             Contattaci per un preventivo gratuito, creiamo progetti su misura a seconda di ogni necessità. 
         </span>
@@ -114,7 +113,6 @@
         </span>
     </footer>
     <!-- ******** -->
-
 </body>
 
 </html>

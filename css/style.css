@@ -24,6 +24,14 @@
 
 }
 
+.bg-image {
+    background: url(../img/genova2-opt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .bg-background {
     background-color: var(--background);
 }
@@ -49,6 +57,17 @@
     background-color: var(--secondary-light);
 }
 
+#footer a {
+    color: var(--secondary-dark);
+    text-decoration: none;
+    cursor: pointer;
+}
+#footer a:hover {
+    color: var(--secondary);
+}
+#footer a:active {
+    color: var(--secondary-light);
+}
 
 #logo {
     background: url(../svg/logo.svg);
@@ -62,7 +81,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
+    
     height: auto;
     min-height: 100vh;
     min-width: 100vw;
@@ -102,10 +121,11 @@
 
 .btn-action {
     align-self: flex-end; 
-
+    cursor: pointer;
     justify-content: space-around;
     min-width: 50%; border-radius: 2px; color: var(--primary); box-shadow: 0 0 2px var(--shadow); border: none; font-size: 1.8rem; 
     /* text-shadow: 0 0 2px var(--dark); */
+    box-shadow: 0 0 4px var(--shadow);
     background-color: var(--secondary);
     padding: 0.2em 0em 0.2em 0.2em;  margin-bottom: 1rem;
 }
@@ -114,26 +134,15 @@
     margin-left: 0.2em;
 }
 
-#azienda {
-    /* font-size: 10vh; */
-    font-weight: 700; 
-    border-bottom: solid 4px var(--secondary);
-}
-
-#sezione-descrizione {
-}
-#sezione-elenco-servizi {
-}
-
 #elenco-servizi li {
     padding: 1em 0.5em;
 }
 
 .btn-action:hover {
-    box-shadow: 0 0 10px 0 inset var(--secondary-dark);
+    box-shadow: 0 0 4px 0 inset var(--secondary-dark);
 }
 .btn-action:focus {
-    box-shadow: 0 0 10px 0 inset var(--secondary-dark);
+    box-shadow: 0 0 4px 0 inset var(--secondary-dark);
 }
 .btn-action:active {
     background-color: var(--secondary-dark);

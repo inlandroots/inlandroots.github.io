@@ -30,7 +30,6 @@ No media query for `xs` since this is the default in Bootstrap */
 }
 
 .hero-banner {
-    border: solid 1px var(--shadow);
     box-shadow: 0 0 16px var(--shadow);
     -webkit-box-shadow: 0 0 16px var(--shadow);
     -moz-box-shadow: 0 0 16px var(--shadow);
@@ -50,6 +49,11 @@ No media query for `xs` since this is the default in Bootstrap */
     }
     #background-image {
         background: none;
+    }
+
+    .content--text {
+        flex-direction: column;
+        padding: 2vw 4vw;
     }
 }
 
@@ -83,15 +87,17 @@ No media query for `xs` since this is the default in Bootstrap */
         display: none;
     }
 
-    #main {
-        align-items: center;
 
+    .bg-image {
         background: url(../img/genova2-opt.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-
+    }
+    
+    #main {
+        align-items: center;
     }
 
     #header {

@@ -48,10 +48,10 @@
 
     <!-- **** MAIN **** -->
 
-    <div id="main bg-background">
-        <div id="" class="col--center" style="height: auto; width: 100%;">
-            <div id="" class="row" style="height: auto; width: 100%;">
-                <section id="sezione-elenco-servizi" class="section content--text">
+    <div id="main w-100 bg-background">
+        <div class="col--center w-100">
+            <div class="row w-100">
+                <section id="sezione-elenco-servizi" class="section content--text w-100">
                     <h1 class="text--xl" style="font-weight: 500; color: var(--text); text-align: left; height: auto; margin: 0;">Servizi edili su misura per te a Genova</h1>
 
                     <span class="text" style="font-weight: 300; margin-top: 2em;">
@@ -75,23 +75,23 @@
                         <li>Impermeabilizzazioni e isolamenti termici e cappotti </li>
                     </ul>
 
-                    <span class="text--l" style="font-weight: 500; text-align: center; padding: 0 4em;">
+                    <span class="text--l" style="font-weight: 500; text-align: center; padding: 0 4vw; margin-top: 2em;">
                         <div style="border-bottom: solid 4px var(--secondary-dark); width: 100%;">
-                            <text style="padding-bottom: 0.2em;">Contattaci per un preventivo gratuito!</text>
+                            <text style="padding-bottom: 0.2em; width: 100%;">Contattaci per un preventivo gratuito!</text>
                         </div>
                     </span>
-                    <span class="text--xl" style="font-weight: 500; text-align: center; margin-top: 1em; color: var(--shade1);">
+                    <span class="text--xl" style="font-weight: 500; text-align: center; margin-top: 1em; color: var(--text);">
                         <i class="fa fas fa-at"></i>
                     </span>
-                    <span class="text" style="font-weight: 500; text-align: center; margin-top: 0.5em;">
-                        <a>gbprogetticostruzionisrl@gmail.com</a>                        
+                    <span class="text-xs" style="font-weight: 500; text-align: center; margin-top: 0.5em;">
+                        <a href="mailto:gbprogetticostruzionisrl@gmail.com?subject:'Richiesta Preventivo Gratuito'">gbprogetticostruzionisrl@gmail.com</a>                        
                     </span>
-                    <span class="text--xl" style="font-weight: 500; text-align: center; margin-top: 0.5em; color: var(--shade1);">
+                    <span class="text--xl" style="font-weight: 500; text-align: center; margin-top: 0.5em; color: var(--text);">
                         <i class="fa fas fa-phone"></i>
                     </span>
                     <span class="text" style="font-weight: 500; text-align: center; margin-top: 0.5em; margin-bottom: 1em;">
-                        <a>320 6345 722</a><br>
-                        <a>346 4903 719</a>
+                        <a href="tel:+393206345722">320 6345 722</a><br>
+                        <a href="tel:+393464903719">346 4903 719</a>
                     </span>
                 </section>
             </div>
@@ -99,18 +99,35 @@
     </div>
     <!-- ******** -->
 
-    <!-- **** FOOTER **** -->
-    <footer id="footer" class="" style="height: auto; padding: 1rem; background: var(--dark); color: var(--primary); display: flex; justify-content: space-around; align-items: center;">
-        <span style="font-size: 0.6rem; max-width: 50%;">
-            Contattaci per un preventivo gratuito, creiamo progetti su misura a seconda di ogni necessità. 
-        </span>
-        <span style="font-size: 0.6rem; max-width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-            <text>gbprogetticostruzionisrl@gmail.com</text> 
-            <text>gbprogetticostruzionisrl@pec.it</text>
-            <text>+39 320 63 45 722 / +39 346 49 03 719</text> 
-            <text>Piazza Leonardo Da Vinci 5/3</text>
-            <text>16149 Genova</text>
-        </span>
+   <!-- **** FOOTER **** -->
+    <!-- style="height: auto; padding: 1rem; background: var(--dark); color: var(--primary); display: flex; justify-content: space-around; align-items: center;" -->
+    <footer id="footer" class="row bg-primary-dark" style="padding: 4vh; background-color: black; color: var(--primary-dark)">
+        <div class="row" style="align-items: center;">
+            <div class="col w-50">
+                <text class="w-100" style="font-size: 0.8rem; line-height: 100%; text-align: left;">
+                    Contattaci per un preventivo gratuito, creiamo progetti su misura a seconda di ogni necessità.
+                </text>
+            </div>
+            <div class="col w-50">
+                <text class="w-100" style="font-size: 1.6rem; font-weight: 700; line-height: 100%; text-align: right;">
+                    G&B
+                </text>
+                <text class="w-100" style="font-size: 0.8rem; font-weight: 700; line-height: 100%; text-align: right; margin-bottom: 0.5em;">
+                    Progetti e Costruzioni srl
+                </text>
+                <text class="w-100" style="font-size: 0.8rem; line-height: 100%; text-align: right;">Piazza Leonardo Da Vinci 5/3</text>
+                <text class="w-100" style="font-size: 0.8rem; line-height: 100%; text-align: right;">16149 Genova</text>
+            </div>            
+        </div>
+        <div class="row" style="margin-top: 1em;">
+            <div class="col w-100">
+                <a href="mailto:gbprogetticostruzionisrl@gmail.com?subject:'Richiesta Preventivo Gratuito'" style="font-size: 0.8rem; line-height: 120%; text-align: left;">gbprogetticostruzionisrl@gmail.com</a> 
+                <a href="mailto:gbprogetticostruzionisrl@pec.it?subject:'Richiesta Preventivo Gratuito'" style="font-size: 0.8rem; line-height: 120%; text-align: left; margin-bottom: 0.5em;">gbprogetticostruzionisrl@pec.it</a>
+                <a href="tel:+393206345722" style="font-size: 0.8rem; line-height: 120%; text-align: left;">+39 320 63 45 722</text>
+                <a href="tel:+393464903719" style="font-size: 0.8rem; line-height: 120%; text-align: left;">+39 346 49 03 719</text>
+            </div>
+        </div>
+    
     </footer>
     <!-- ******** -->
 </body>

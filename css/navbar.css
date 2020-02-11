@@ -49,7 +49,7 @@
     padding-left: 1em;
 }
 .navbar__button.current {
-    cursor: default;
+    cursor: default !important;
 }
 .navbar__button.current a {
     font-weight: 700 !important;
@@ -72,18 +72,23 @@ button.disabled {
     font-size: 6vh;
 }
 
-.navbar__button.current a:hover {
-    color: var(--text);
-    border-left: solid 4px var(--secondary);
-}
-.navbar__button.disabled a:active {
 
-}
-.navbar__button a:hover {
+.navbar__button:hover a {
     color: var(--secondary);
     /* font-weight: 700; */
     border-left: solid 4px var(--secondary);
 }
 .navbar__button:active {
     opacity: 0.4;
+}
+
+.navbar__button.current:hover a {
+    color: var(--text);
+    border-left: solid 4px var(--secondary);
+}
+.navbar__button.current:active {
+    opacity: 1;
+}
+.navbar__button.disabled a:active {
+
 }

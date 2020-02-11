@@ -19,4 +19,14 @@ window.addEventListener("load", function() {
             navbar.classList.replace("navbar--expanded", "navbar--collapsed");
         }
     }
+    document.body.touchstart = function() {
+        if (navbar.classList.contains("navbar--expanded")) { 
+            navbar.classList.replace("navbar--expanded", "navbar--collapsed");
+        }
+    }
+    document.body.onscroll = function() {
+        if (navbar.classList.contains("navbar--expanded")) { 
+            navbar.classList.replace("navbar--expanded", "navbar--collapsed");
+        }
+    }
 })

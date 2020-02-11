@@ -35,7 +35,7 @@
             <i class="fa fa-navicon"></i>
         </div>
         
-        <div id="home" class="navbar__button">
+        <div id="home" class="navbar__button" onclick="window.location.href = 'index.html';">
             <a class="text--nav">Home</a>
         </div>
         <div id="servizi" class="navbar__button" onclick="window.location.href = 'servizi.html';">
@@ -50,11 +50,19 @@
 
     <!-- **** MAIN **** -->
 
-    <div id="main" class="bg-background">
+    <div id="main" class="bg-primary-light">
         <div class="col--center" style="height: auto; width: 100%;">
-
+            <div class="col content--text" style="height: auto; width: 100%;">
+                <h1 class="text--xl" style="font-weight: 500; color: var(--text); text-align: left; height: auto; margin: 0;">Pulizia e professionalità in ogni fase del lavoro</h1>
+                <span class="text" style="font-weight: 300; margin-top: 2em;">
+                    Manteniamo professionalità e ordine in ogni fase della realizzazione: dai primi lavori al risultato finale.
+                </br>
+                    Dai uno sguardo alla nostra gallery.
+                </span>
+            </div>
+        
             <div class="col" style="height: auto; width: 100%;">
-                
+
                 <div class="row work__title">
                     <text class="text--l">Costruzione Cantina</text>
                 </div>
@@ -91,26 +99,81 @@
                     </div>
                 </div>
 
+                <div class="row work__title">
+                    <text class="text--l">Ristrutturazioni</text>
+                </div>
+                <div class="mq work">                    
+                    <div class="mq work__pic">   
+                        <img src="img/works/ristrutturazioni/ristrutturazioni1-prima-400.jpeg" alt="before">
+                        <text>Prima</text>                     
+                    </div>
+                    <div class="mq work__pic">
+                        <img src="img/works/ristrutturazioni/ristrutturazioni1-durante-400.jpeg" alt="before">     
+                        <text>Durante</text>                   
+                    </div>
+                    <div class="mq work__pic">
+                        <img src="img/works/ristrutturazioni/ristrutturazioni1-dopo-400.jpeg" alt="before">    
+                        <text>Dopo</text>                    
+                    </div>
+                </div>
+
+                <div class="row work__title">
+                    <text class="text--l">Riorganizzazione Spazi Interni</text>
+                </div>
+                <div class="mq work">                    
+                    <div class="mq work__pic">   
+                        <img src="img/works/ristrutturazioni/ristrutturazioni2-prima-400.jpeg" alt="before">
+                        <text>Prima</text>                     
+                    </div>
+                    <div class="mq work__pic">
+                        <img src="img/works/ristrutturazioni/ristrutturazioni2-durante-400.jpeg" alt="before">     
+                        <text>Durante</text>                   
+                    </div>
+                    <div class="mq work__pic">
+                        <img src="img/works/ristrutturazioni/ristrutturazioni2-dopo-400.jpeg" alt="before">    
+                        <text>Dopo</text>                    
+                    </div>
+                </div>
             </div>
 
         </div> 
     </div>
     <!-- ******** -->
 
-   <!-- **** FOOTER **** -->
-   <footer id="footer" class="" style="height: auto; padding: 1rem; background: var(--dark); color: var(--primary); display: flex; justify-content: space-around; align-items: center;">
-    <span style="font-size: 0.6rem; max-width: 50%;">
-        Contattaci per un preventivo gratuito, creiamo progetti su misura a seconda di ogni necessità. 
-    </span>
-    <span style="font-size: 0.6rem; max-width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-        <text>gbprogetticostruzionisrl@gmail.com</text> 
-        <text>gbprogetticostruzionisrl@pec.it</text>
-        <text>+39 320 63 45 722 / +39 346 49 03 719</text> 
-        <text>Piazza Leonardo Da Vinci 5/3</text>
-        <text>16149 Genova</text>
-    </span>
-</footer>
-<!-- ******** -->
+
+
+
+    <!-- **** FOOTER **** -->
+    <!-- style="height: auto; padding: 1rem; background: var(--dark); color: var(--primary); display: flex; justify-content: space-around; align-items: center;" -->
+    <footer id="footer" class="row bg-primary-dark" style="padding: 4vh; background-color: black; color: var(--primary-dark)">
+        <div class="row" style="align-items: center;">
+            <div class="col w-50">
+                <text class="w-100" style="font-size: 0.8rem; line-height: 100%; text-align: left;">
+                    Contattaci per un preventivo gratuito, creiamo progetti su misura a seconda di ogni necessità.
+                </text>
+            </div>
+            <div class="col w-50">
+                <text class="w-100" style="font-size: 1.6rem; font-weight: 700; line-height: 100%; text-align: right;">
+                    G&B
+                </text>
+                <text class="w-100" style="font-size: 0.8rem; font-weight: 700; line-height: 100%; text-align: right; margin-bottom: 0.5em;">
+                    Progetti e Costruzioni srl
+                </text>
+                <text class="w-100" style="font-size: 0.8rem; line-height: 100%; text-align: right;">Piazza Leonardo Da Vinci 5/3</text>
+                <text class="w-100" style="font-size: 0.8rem; line-height: 100%; text-align: right;">16149 Genova</text>
+            </div>            
+        </div>
+        <div class="row" style="margin-top: 1em;">
+            <div class="col w-100">
+                <a href="mailto:gbprogetticostruzionisrl@gmail.com?subject:'Richiesta Preventivo Gratuito' " style="font-size: 0.8rem; line-height: 120%; text-align: left;">gbprogetticostruzionisrl@gmail.com</a> 
+                <a href="mailto:gbprogetticostruzionisrl@pec.it?subject:'Richiesta Preventivo Gratuito' " style="font-size: 0.8rem; line-height: 120%; text-align: left; margin-bottom: 0.5em;">gbprogetticostruzionisrl@pec.it</a>
+                <a href="tel:+393206345722" style="font-size: 0.8rem; line-height: 120%; text-align: left;">+39 320 63 45 722</text>
+                <a href="tel:+393464903719" style="font-size: 0.8rem; line-height: 120%; text-align: left;">+39 346 49 03 719</text>
+            </div>
+        </div>
+    
+    </footer>
+    <!-- ******** -->
 
 </body>
 
